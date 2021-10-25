@@ -135,7 +135,9 @@ By way of example only, to express a dependency on a component "\['x', 'y'\]", w
 
 # Extension Parameters {#extension-parameters}
 
-Several parameters are needed to define the behaviour of the commands specified in {{extension-commands}}. These parameters follow the same considerations as defined in {{secparameters(Parameters)<I-D.ietf-suit-manifest}} in {{I-D.ietf-suit-manifest}}
+Several parameters are needed to define the behaviour of the commands
+specified in {{extension-commands}}. These parameters follow the same
+considerations as defined in {{secparameters (Parameters)<I-D.ietf-suit-manifest}} in {{I-D.ietf-suit-manifest}}
 
 Name | CDDL Structure | Reference
 ---|---|---
@@ -217,7 +219,10 @@ suit-wait-event-other-device-version reuses the encoding of suit-parameter-versi
 
 # Extension Commands
 
-The following table defines the semantics of the commands defined in this specification in the same way as {{I-D.ietf-suit-manifest#command-behavior}}.
+The following table defines the semantics of the commands defined in
+ this specification in the same way as {{command-behavior
+ (command-behavior)<I-D.ietf-suit-manifest}} in
+ {{I-D.ietf-suit-manifest}}.
 
 | Command Name | CDDL Identifier | Semantic of the Operation
 |------|---|----
@@ -235,7 +240,8 @@ Verify that the current time is BEFORE the specified time. suit-condition-use-be
 
 ## suit-condition-image-not-match
 
-Verify that the current component does not match the suit-parameter-image-digest ({{I-D.ietf-suit-manifest#suit-parameter-image-digest}}). If no digest is specified, the condition fails. suit-condition-image-not-match is OPTIONAL to implement.
+Verify that the current component does not match the
+{{suit-parameter-image-digest (suit-parameter-image-digest)<I-D.ietf-suit-manifest}} {{I-D.ietf-suit-manifest}}. If no digest is specified, the condition fails. suit-condition-image-not-match is OPTIONAL to implement.
 
 ## suit-condition-minimum-battery
 
@@ -301,7 +307,9 @@ This document extends the SUIT manifest specification. A detailed security treat
 
 # A. Full CDDL {#full-cddl}
 
-To be valid, the following CDDL MUST have the SUIT Manifest CDDL prepended to it. The SUIT CDDL is defined in {{I-D.ietf-suit-manifest#full-cddl}}
+To be valid, the following CDDL MUST have the SUIT Manifest CDDL
+prepended to it. The SUIT CDDL is defined in {{full-cddl
+(full-cddl)<I-D.ietf-suit-manifest}} in {{I-D.ietf-suit-manifest}}.
 
 ~~~ CDDL
 {::include draft-moran-suit-update-management.cddl}
